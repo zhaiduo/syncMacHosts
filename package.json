@@ -1,7 +1,7 @@
 {
   "name": "sync-mac-hosts",
   "version": "0.1.0",
-  "description": "synchronize IP for domain",
+  "description": "Synchronize IP for domain in Mac hosts.",
   "main": "main.js",
   "scripts": {
     "test": "node_modules/casperjs/bin/casperjs selftest"
@@ -18,5 +18,7 @@
   "homepage": "https://github.com/zhaiduo/syncMacHosts#readme",
   "dependencies": {
     "casperjs": "^1.1.3"
-  }
+  },
+  "author": "Adam <zhaiduo@gmail.com> (http://zhaiduo.com)",
+  "license": "MIT"
 }
