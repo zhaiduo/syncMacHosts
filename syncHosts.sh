@@ -1,6 +1,7 @@
 #/bin/bash
 
 #for sed: http://www.grymoire.com/Unix/Sed.html
+#echo "/usr/local/bin/fish" | sudo tee -a /private/etc/hosts
 
 if [ "$1" == "" ]; then
   echo Usage: $0 ip domain
@@ -14,7 +15,7 @@ if [ "$2" == "" ]; then
   exit 0
 fi
 
-sed -i bak -E '
+sudo sed -i bak -E '
 /^[0-9\.]+[ ]+'${2}'/{
 s/^[0-9\.]+/'${1}'/
 h
@@ -28,5 +29,5 @@ s/$/\
 x
 :a
 x
-}' hosts
+}' /private/etc/hosts
 
