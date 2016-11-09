@@ -1,4 +1,4 @@
-# Sync-Mac-Hosts v0.1.0
+# Sync-Mac-Hosts v0.1.1
 > Synchronize IP for domain in Mac hosts. 同步 Mac hosts 文件。
 
 ```
